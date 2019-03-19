@@ -1,0 +1,17 @@
+package com.codebind;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class calculatortest {
+
+	
+	public void test() {
+		calculator c = new calculator();
+		assertEquals(8, c.operation(5,3,"addition"));
+		assertEquals(4, c.operation(6,2,"subtraction"));
+		assertEquals(14, c.operation(7,2,"multiplication"));
+	}
+
+}

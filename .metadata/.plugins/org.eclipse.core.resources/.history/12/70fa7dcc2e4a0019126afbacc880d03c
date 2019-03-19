@@ -1,0 +1,32 @@
+package com.codebind;
+
+public class calculator {
+	public int operation(int number1,int number2,String operator)
+	switch(operator){
+		case "addition":{
+			addition(number1,number2);
+			break;
+		}
+		case "subtraction":{
+			subtraction(number1,number2);
+			break;
+		}
+		case "multiplication":{
+			multiplication(number1,number2);
+			break;
+		}
+		default:{
+			return -1;
+		}
+	}
+	int addition(int number1,int number2){
+		return number1+number2;
+	}
+	int subtraction(int number1,int number2){
+		return number1-number2;
+	}
+	int multiplication(int number1,int number2){
+		return number1*number2;
+	}	
+}
+

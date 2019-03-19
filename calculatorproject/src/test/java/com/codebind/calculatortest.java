@@ -1,0 +1,26 @@
+package com.codebind;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import com.codebind.calculator;
+public class calculatortest {
+
+	
+	public void test() {
+		calculator c = new calculator();
+
+			assertEquals("Wrong Answer check add method",9,c.addition(4,5),0.0);
+			assertEquals("Wrong Answer check add method",119.9,c.addition(89.9,20),0.0);
+			assertEquals("Wrong Answer check add method",62.5,c.addition(30.8,32.5),0.0);
+
+			assertEquals("Wrong Answer check div method",4,c.division(20, 5),0.0);
+			assertEquals("Wrong Answer check div method",6.8548387096,c.division(42.5,6.2),0.0);
+			assertEquals("Wrong Answer check div method",2.66666,c.division(9.6,3.6),0.0);
+	
+			assertEquals("Wrong Answer check mul method",100,c.multiplication(25,4),0.0);
+			assertEquals("Wrong Answer check mul method",18.600000000000001,c.multiplication(6.2,3),0.0);
+			assertEquals("Wrong Answer check mul method",249920.649,c.multiplication(2595.23, 96.3),0.0);
+		}
+	}

@@ -1,0 +1,22 @@
+package com.codebind;
+
+public class housecost {
+	public double construction(int a,int area)
+	{
+		if(a==1)
+		{
+		double res=area*1200; //for Standard Materials
+				}
+		else if(ch==2)
+		{
+		double res=area*1500; //for Above Standard Materials
+				}
+		else if(ch==3) {
+		double res=area*1800; //for High Standard Materials
+				}
+		else {
+		double res=area*2500; //for High Standard Materials and fully automated house
+				}
+		return res;
+		}
+}

@@ -1,0 +1,32 @@
+package com.codebind;
+import static org.junit.Assert.*;
+public class housecosttest {
+	//housecost h=new housecost();
+	/*User Options
+	 * 1.Standard Material.
+	 * 2.Above Standard Material.
+	 * 3.High Standard Material.
+	 * 4.Highly Standard Material With Fully Automated Home.
+	 */
+	@Test
+	public void test() {
+		housecost h=new housecost();
+		//Test Cases for Standard Materials.
+		assertEquals("Wrong Answer",960000,h.construction(1,800),0.0);
+		assertEquals("Wrong Answer",992160,h.construction(1,826.8),0.0);
+		assertEquals("Wrong Answer",511200,h.construction(1,426),0.0);
+		//Test Cases for Above Standard Materials.
+		assertEquals("Wrong Answer",1350000,h.construction(2,900),0.0);
+		assertEquals("Wrong Answer",874500,h.construction(2,583),0.0);
+		assertEquals("Wrong Answer",677850,h.construction(2,451.9),0.0);
+		//Test Cases for High Standard Material.
+		assertEquals("Wrong Answer",900000,h.construction(3,500),0.0);
+		assertEquals("Wrong Answer",1710450,h.construction(3,950.25),0.0);
+}
+
+	private void assertEquals(String string, int i, double construction,
+			double d) {
+		// TODO Auto-generated method stub
+		
+	}
+}
